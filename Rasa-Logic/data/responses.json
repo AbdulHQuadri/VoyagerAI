@@ -1,0 +1,180 @@
+{
+    "greet_and_ask_formal": {
+      "english": [
+        "Of course, sir/madam. The taxi stand is just outside, to the right. Follow the blue signs.",
+        "Certainly! The taxi area is located outside the terminal building. Just exit and turn right.",
+        "Good day to you too! You'll find the taxi stand if you follow the blue signs outside to your right."
+      ],
+      "spanish": [
+        "¡Buenos días! Por supuesto, señor/señora. La parada de taxis está justo a la salida, a la derecha. Siga las señales azules.",
+        "¡Buenas tardes! La zona de taxis se encuentra fuera del edificio de la terminal. Salga y gire a la derecha.",
+        "¡Muy buenos días! Encontrará la parada de taxis siguiendo las señales azules fuera a su derecha."
+      ]
+    },
+    "greet_and_ask_casual": {
+      "english": [
+        "Hi. Yes, the taxis are outside to the right, following that corridor.",
+        "Hello there. Taxis are just outside - follow the corridor and turn right.",
+        "Hey. You'll find taxis if you go outside and look to your right."
+      ],
+      "spanish": [
+        "Hola. Sí, las taxis están afuera a la derecha, siguiendo ese pasillo.",
+        "Hola. Los taxis están justo afuera - siga el pasillo y gire a la derecha.",
+        "Hola. Encontrará taxis si sale y mira a su derecha."
+      ]
+    },
+    "ask_without_greeting": {
+      "english": [
+        "To the right, outside.",
+        "Outside the terminal, right side.",
+        "Exit the building and turn right."
+      ],
+      "spanish": [
+        "A la derecha, afuera.",
+        "Fuera de la terminal, lado derecho.",
+        "Salga del edificio y gire a la derecha."
+      ]
+    },
+    "provide_destination_formal": {
+      "english": [
+        "Yes, sir/madam, to the Hotel Gran Vía. I know the area well. Please, get in.",
+        "Of course, to Hotel Gran Vía. I'm very familiar with that location. Please make yourself comfortable.",
+        "Certainly, I'd be happy to take you to Hotel Gran Vía. Please step in."
+      ],
+      "spanish": [
+        "Sí, señor/señora, al Hotel Gran Vía. Conozco bien la zona. Por favor, suba.",
+        "Por supuesto, al Hotel Gran Vía. Estoy muy familiarizado con esa ubicación. Por favor, póngase cómodo.",
+        "Ciertamente, estaré encantado de llevarle al Hotel Gran Vía. Por favor, entre."
+      ]
+    },
+    "provide_destination_with_address": {
+      "english": [
+        "Perfect, I know exactly where it is. Get in, please.",
+        "Ah, Hotel Gran Vía on Calle Alcalá - I know it well. Please get in.",
+        "Thank you for the complete address. I know exactly where to go. Please step in."
+      ],
+      "spanish": [
+        "Perfecto, conozco exactamente dónde está. Suba, por favor.",
+        "Ah, Hotel Gran Vía en Calle Alcalá - lo conozco bien. Por favor, suba.",
+        "Gracias por la dirección completa. Sé exactamente a dónde ir. Por favor, entre."
+      ]
+    },
+    "provide_destination_casual": {
+      "english": [
+        "Hotel Gran Vía? Do you have the address?",
+        "Which Hotel Gran Vía? There are a couple in Madrid.",
+        "Could you be more specific? Do you know which street it's on?"
+      ],
+      "spanish": [
+        "¿Hotel Gran Vía? ¿Tiene la dirección?",
+        "¿Qué Hotel Gran Vía? Hay un par en Madrid.",
+        "¿Podría ser más específico? ¿Sabe en qué calle está?"
+      ]
+    },
+    "accept_fare": {
+      "english": [
+        "Great, we'll be there in about 20 minutes, traffic permitting.",
+        "Perfect. I'll take the fastest route to get you there quickly.",
+        "Thank you. I'll make sure you arrive comfortably and on time."
+      ],
+      "spanish": [
+        "Genial, llegaremos en unos 20 minutos, si el tráfico lo permite.",
+        "Perfecto. Tomaré la ruta más rápida para llevarle allí rápidamente.",
+        "Gracias. Me aseguraré de que llegue cómodamente y a tiempo."
+      ]
+    },
+    "ask_for_meter": {
+      "english": [
+        "Of course, no problem. I'll turn on the meter right now.",
+        "Yes, I should have done that already. It's on now.",
+        "Absolutely, that's your right. The meter is now running."
+      ],
+      "spanish": [
+        "Por supuesto, sin problema. Encenderé el taxímetro ahora mismo.",
+        "Sí, debería haberlo hecho ya. Ya está encendido.",
+        "Absolutamente, es su derecho. El taxímetro ya está funcionando."
+      ]
+    },
+    "negotiate_fare": {
+      "english": [
+        "Well, I could do 25 euros, but that's the best I can offer.",
+        "Since it's a fixed rate from the airport, I can only go down to 27 euros.",
+        "Let's meet in the middle - how about 28 euros?"
+      ],
+      "spanish": [
+        "Bueno, podría hacerlo por 25 euros, pero es lo mejor que puedo ofrecer.",
+        "Como es una tarifa fija desde el aeropuerto, solo puedo bajar a 27 euros.",
+        "Encontrémonos en el medio - ¿qué tal 28 euros?"
+      ]
+    },
+    "ask_for_receipt": {
+      "english": [
+        "Yes, of course. I'll prepare a receipt when we arrive.",
+        "Certainly, I'll give you a receipt at the end of our journey.",
+        "No problem, you'll get a receipt when we reach your destination."
+      ],
+      "spanish": [
+        "Sí, por supuesto. Prepararé un recibo cuando lleguemos.",
+        "Ciertamente, le daré un recibo al final de nuestro viaje.",
+        "Sin problema, recibirá un recibo cuando lleguemos a su destino."
+      ]
+    },
+    "ask_about_travel_time": {
+      "english": [
+        "It should take about 20-25 minutes, depending on traffic.",
+        "Usually it's around 20 minutes to Hotel Gran Vía from the airport.",
+        "At this time of day, I'd say about 30 minutes with the current traffic."
+      ],
+      "spanish": [
+        "Debería tomar unos 20-25 minutos, dependiendo del tráfico.",
+        "Normalmente se tarda unos 20 minutos al Hotel Gran Vía desde el aeropuerto.",
+        "A esta hora del día, yo diría que unos 30 minutos con el tráfico actual."
+      ]
+    },
+    "express_gratitude": {
+      "english": [
+        "You're very welcome! Enjoy your stay in Madrid.",
+        "My pleasure. I hope you have a wonderful time in our city.",
+        "You're welcome! If you need a taxi during your stay, don't hesitate to call our company."
+      ],
+      "spanish": [
+        "¡De nada! Disfrute de su estancia en Madrid.",
+        "Un placer. Espero que tenga una estancia maravillosa en nuestra ciudad.",
+        "¡No hay de qué! Si necesita un taxi durante su estancia, no dude en llamar a nuestra compañía."
+      ]
+    },
+    "fallback_response": {
+      "english": [
+        "I'm sorry, I didn't quite catch that. Could you please repeat?",
+        "Pardon me, could you say that again?",
+        "I'm not sure I understood. Could you rephrase that, please?"
+      ],
+      "spanish": [
+        "Lo siento, no entendí bien. ¿Podría repetir, por favor?",
+        "Perdone, ¿podría decirlo de nuevo?",
+        "No estoy seguro de haber entendido. ¿Podría reformularlo, por favor?"
+      ]
+    },
+    "cultural_note": {
+      "english": [
+        "Cultural Note: In Spain, greetings are important and skipping them can be perceived as rude. Starting with 'Buenos días' or 'Hola' is customary before asking for information.",
+        "Cultural Note: When taking taxis in Spain, it's helpful to provide the complete address when possible, as there may be multiple establishments with similar names.",
+        "Cultural Note: In Spain, taxi fares from airports to the city center are often fixed rates, but it's still good practice to confirm the approximate cost before departing."
+      ],
+      "spanish": [
+        "Nota Cultural: En España, los saludos son importantes y omitirlos puede ser percibido como descortés. Comenzar con 'Buenos días' o 'Hola' es costumbre antes de pedir información.",
+        "Nota Cultural: Al tomar taxis en España, es útil proporcionar la dirección completa cuando sea posible, ya que puede haber varios establecimientos con nombres similares.",
+        "Nota Cultural: En España, las tarifas de taxi desde los aeropuertos al centro de la ciudad suelen ser tarifas fijas, pero sigue siendo una buena práctica confirmar el costo aproximado antes de partir."
+      ]
+    },
+    "scenario_complete": {
+      "english": [
+        "Congratulations! You've successfully completed the 'From Airport to Hotel' scenario. During this conversation, you practiced formal greetings, giving addresses, and negotiating prices in Spanish. Would you like to try another scenario or review some of the phrases you've learned?",
+        "Well done! You've navigated the 'Airport to Hotel' scenario successfully. You've practiced important Spanish travel phrases and cultural customs. Would you like to continue with another travel situation or review what you've learned?"
+      ],
+      "spanish": [
+        "¡Felicidades! Has completado el escenario 'Del Aeropuerto al Hotel' con éxito. Durante esta conversación, has practicado saludos formales, dar direcciones y negociar precios en español. ¿Te gustaría intentar otro escenario o repasar algunas de las frases que has aprendido?",
+        "¡Bien hecho! Has navegado con éxito el escenario 'Del Aeropuerto al Hotel'. Has practicado frases importantes de viaje en español y costumbres culturales. ¿Te gustaría continuar con otra situación de viaje o repasar lo que has aprendido?"
+      ]
+    }
+  }

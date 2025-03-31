@@ -1,0 +1,189 @@
+{
+    "topics": [
+        {
+            "name": "greetings",
+            "examples": [
+                {
+                    "phrase": "Hola",
+                    "meaning": "Hello",
+                    "explanation": "A casual way to greet someone."
+                },
+                {
+                    "phrase": "Buenos días",
+                    "meaning": "Good morning",
+                    "explanation": "Used to greet people in the morning."
+                },
+                {
+                    "phrase": "Buenas tardes",
+                    "meaning": "Good afternoon",
+                    "explanation": "Used to greet people in the afternoon."
+                },
+                {
+                    "phrase": "Buenas noches",
+                    "meaning": "Good evening / Good night",
+                    "explanation": "Used at night or when saying goodbye before bedtime."
+                },
+                {
+                    "phrase": "¿Qué tal?",
+                    "meaning": "How's it going?",
+                    "explanation": "An informal way to ask how someone is doing."
+                },
+                {
+                    "phrase": "Mucho gusto",
+                    "meaning": "Nice to meet you",
+                    "explanation": "A polite way to introduce yourself."
+                }
+            ]
+        },
+        {
+            "name": "food",
+            "examples": [
+                {
+                    "phrase": "La cuenta, por favor.",
+                    "meaning": "The bill, please.",
+                    "explanation": "Used to ask for the check at a restaurant."
+                },
+                {
+                    "phrase": "¿Me puede recomendar un plato típico?",
+                    "meaning": "Can you recommend a typical dish?",
+                    "explanation": "Useful for asking about traditional food."
+                },
+                {
+                    "phrase": "Quisiera una mesa para dos.",
+                    "meaning": "I’d like a table for two.",
+                    "explanation": "Used when requesting a table at a restaurant."
+                },
+                {
+                    "phrase": "Sin picante, por favor.",
+                    "meaning": "No spice, please.",
+                    "explanation": "Useful if you don’t want spicy food."
+                },
+                {
+                    "phrase": "¿Tiene opciones vegetarianas?",
+                    "meaning": "Do you have vegetarian options?",
+                    "explanation": "Helpful if you have dietary preferences."
+                }
+            ]
+        },
+        {
+            "name": "travel",
+            "examples": [
+                {
+                    "phrase": "¿Dónde está el aeropuerto?",
+                    "meaning": "Where is the airport?",
+                    "explanation": "Useful when traveling."
+                },
+                {
+                    "phrase": "Necesito un taxi, por favor.",
+                    "meaning": "I need a taxi, please.",
+                    "explanation": "Helpful for getting transportation."
+                },
+                {
+                    "phrase": "¿Cuánto cuesta este boleto?",
+                    "meaning": "How much is this ticket?",
+                    "explanation": "Useful when buying a bus or train ticket."
+                },
+                {
+                    "phrase": "Tengo una reserva a nombre de...",
+                    "meaning": "I have a reservation under...",
+                    "explanation": "Helpful when checking into a hotel."
+                },
+                {
+                    "phrase": "¿A qué hora sale el tren?",
+                    "meaning": "What time does the train leave?",
+                    "explanation": "Used to check train schedules."
+                }
+            ]
+        },
+        {
+            "name": "directions",
+            "examples": [
+                {
+                    "phrase": "¿Dónde está el baño?",
+                    "meaning": "Where is the bathroom?",
+                    "explanation": "One of the most essential travel phrases."
+                },
+                {
+                    "phrase": "¿Cómo llego a la estación de tren?",
+                    "meaning": "How do I get to the train station?",
+                    "explanation": "Useful for asking for directions."
+                },
+                {
+                    "phrase": "Gire a la derecha.",
+                    "meaning": "Turn right.",
+                    "explanation": "Common direction for navigation."
+                },
+                {
+                    "phrase": "Siga recto.",
+                    "meaning": "Go straight ahead.",
+                    "explanation": "Used for giving or following directions."
+                },
+                {
+                    "phrase": "Está cerca/lejos.",
+                    "meaning": "It is close/far.",
+                    "explanation": "Helps describe distances."
+                }
+            ]
+        },
+        {
+            "name": "emergencies",
+            "examples": [
+                {
+                    "phrase": "¡Ayuda!",
+                    "meaning": "Help!",
+                    "explanation": "Used in emergency situations."
+                },
+                {
+                    "phrase": "Llame a la policía.",
+                    "meaning": "Call the police.",
+                    "explanation": "Useful in case of a crime or emergency."
+                },
+                {
+                    "phrase": "Necesito un médico.",
+                    "meaning": "I need a doctor.",
+                    "explanation": "Helpful in medical emergencies."
+                },
+                {
+                    "phrase": "Estoy perdido.",
+                    "meaning": "I am lost.",
+                    "explanation": "Useful when you don’t know where you are."
+                },
+                {
+                    "phrase": "¿Dónde está el hospital más cercano?",
+                    "meaning": "Where is the nearest hospital?",
+                    "explanation": "Important in case of a health emergency."
+                }
+            ]
+        },
+        {
+            "name": "small talk",
+            "examples": [
+                {
+                    "phrase": "¿De dónde eres?",
+                    "meaning": "Where are you from?",
+                    "explanation": "A common conversation starter."
+                },
+                {
+                    "phrase": "¿Qué te gusta hacer?",
+                    "meaning": "What do you like to do?",
+                    "explanation": "Good for getting to know someone."
+                },
+                {
+                    "phrase": "Hace buen tiempo hoy.",
+                    "meaning": "The weather is nice today.",
+                    "explanation": "A typical small talk phrase."
+                },
+                {
+                    "phrase": "¿Tienes hermanos?",
+                    "meaning": "Do you have siblings?",
+                    "explanation": "A common personal question."
+                },
+                {
+                    "phrase": "Me gusta la música.",
+                    "meaning": "I like music.",
+                    "explanation": "Useful for sharing interests."
+                }
+            ]
+        }
+    ]
+}

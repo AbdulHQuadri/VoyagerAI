@@ -1,0 +1,40 @@
+{
+  "name": "final-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run dev-frontend\"",
+    "start-backend": "npm run dev --prefix backend",
+    "dev-frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
+    "dev-backend": "npm run dev --prefix backend",
+    "build": "npm run build-frontend && npm run build-backend",
+    "build-frontend": "npm run build --prefix frontend",
+    "build-backend": "echo \"Backend build script can be added here if necessary\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "concurrently": "^9.1.2",
+    "postcss": "^7.0.39",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@tamagui/core": "^1.123.3",
+    "@tamagui/vite-plugin": "^1.123.3",
+    "@tamagui/web": "^1.123.3",
+    "bcrypt": "^5.1.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "framer-motion": "^12.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.0",
+    "reactflow": "^11.11.4",
+    "tamagui": "^1.123.3"
+  }
+}

@@ -1,0 +1,147 @@
+version: '3.1'
+
+intents:
+  - greet_and_ask_formal
+  - greet_and_ask_casual
+  - ask_without_greeting
+  - provide_destination_formal
+  - provide_destination_with_address 
+  - provide_destination_casual
+  - accept_fare
+  - ask_for_meter
+  - negotiate_fare
+  - ask_for_receipt
+  - ask_about_travel_time 
+  - express_gratitude
+  - out_of_scope
+
+  # Restaurant intents
+  - restaurant_greet
+  - ask_for_menu
+  - order_meal
+  - customize_order
+  - ask_about_allergies
+  - ask_recommendations
+  - handle_mistakes
+  - ask_for_bill
+  - leave_feedback
+  # Direction intents
+  - ask_basic_directions
+  - clarify_directions
+  - ask_public_transit
+  - ask_walking_distance
+  - handle_detour
+  - give_directions
+  - ask_ticket_prices
+  - handle_delay
+  - ask_schedules
+  
+
+
+
+
+
+responses:
+
+  utter_greet:
+    - text: "Hey how are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up!"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great! Have a great rest of your day"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a chatbot currently being developed by Abdul Quadri"
+  
+  utter_confirm_order:
+    - text: "Great choice! Your {food_item} will be ready soon"
+
+  
+
+  utter_specials:
+    - text: "Today's specials are grilled salmon and truffle pasta."
+
+  utter_allergy_info:
+    - text: "We can make most dishes gluten-free. Do you have any specific allergies?"
+
+  utter_bill_amount:
+    - text: "Your total comes to $25. Would you like to pay by card or cash?"
+
+  utter_thank_you:
+    - text: "Thank you for your kind words! We're glad you enjoyed your meal."
+
+  utter_handle_mistake:
+    - text: "I'm sorry for the mistake. Let me correct that for you right away."
+  
+  utter_ask_translation: 
+    - text: "What phrase would you like me to translate?"
+
+
+slots: 
+  ordered_item:
+    type: text
+    influence_conversation: true
+    mappings: 
+      - type: from_entity
+        entity: food_item
+
+  phrase:
+    type: text
+    influence_conversation: false
+    mappings: 
+    - type: from_entity
+      entity: phrase
+
+  price: 
+    type: float
+    influence_conversation: false
+    mappings: 
+    - type: from_entity
+      entity: price
+
+  address: 
+    type: text
+    influence_conversation: false
+    mappings: 
+    - type: from_entity
+      entity: address
+  
+  hotel: 
+    type: text
+    influence_conversation: false
+    mappings: 
+    - type: from_entity
+      entity: hotel
+
+  
+
+
+entities:
+  - food_item
+  - phrase
+  - price
+  - address
+  - hotel
+
+actions:
+  - action_confirm_order
+  - action_retrieve_notes
+  - action_translate_phrase
+  - action_update_lesson_step
+  - action_response_action
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

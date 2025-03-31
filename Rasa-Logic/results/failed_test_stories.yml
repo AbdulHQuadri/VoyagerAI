@@ -1,0 +1,22 @@
+version: "3.1"
+stories:
+- story: Intermediate orders food (.\tests\test_stories.yml)
+  steps:
+  - intent: order_food
+  - action: utter_ask_toppings  # predicted: utter_ask_size
+  - intent: inform_toppings
+  - action: action_confirm_order
+- story: Ask for directions by transport (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_directions
+  - action: utter_ask_transport  # predicted: action_confirm_order
+  - intent: inform_transport
+  - action: action_give_directions  # predicted: action_confirm_order
+- story: Introduce self (.\tests\test_stories.yml)
+  steps:
+  - intent: introduce_self
+  - action: utter_ask_hobbies  # predicted: utter_greet
+- story: Thank the bot (.\tests\test_stories.yml)
+  steps:
+  - intent: thank
+  - action: utter_thank_you  # predicted: utter_ask_size

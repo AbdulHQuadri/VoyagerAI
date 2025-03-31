@@ -1,0 +1,184 @@
+{
+    "taxi_to_hotel": {
+            "start": {
+                "intents": ["greet_and_ask_formal", "greet_and_ask_casual", "ask_without_greeting"],
+                "notes": "",
+                "transition_notes": "You arrive at the airport and are lost looking for a taxi stand. You see a worker in the middle and decide to go up to them to ask for help."
+            },
+            "greet_and_ask_formal": {
+                "intents": ["provide_destination_formal", "provide_destination_casual", "provide_destination_with_address"],
+                "notes": "Cultural Note: In many Spanish-speaking countries, using formal greetings like 'Buenos días' shows respect.",
+                "transition_notes": "The worker smiles and gives you clear directions to the taxi stand. You follow the instructions and arrive at the taxi stand, where a taxi driver waves at you as you approach."
+            },
+            "greet_and_ask_casual": {
+                "intents": ["provide_destination_formal", "provide_destination_casual", "provide_destination_with_address"],
+                "notes": "Cultural Note: A casual greeting like 'Hola' is fine but may not always be appropriate with service professionals.",
+                "transition_notes": "The worker nods and gestures in the direction of the taxi stand. You follow the instructions and reach the taxi stand, where a driver waves at you."
+            },
+            "ask_without_greeting": {
+                "intents": ["provide_destination_formal", "provide_destination_casual", "provide_destination_with_address"],
+                "notes": "Cultural Note: Not greeting before asking for directions can be seen as impolite.",
+                "transition_notes": "The worker gives you directions but seems slightly annoyed. You make your way to the taxi stand, where a driver looks at you expectantly."
+            },
+            "provide_destination_formal": {
+                "intents": ["accept_fare", "ask_for_meter", "negotiate_fare"],
+                "notes": "Stage Note: The driver nods and starts preparing to drive.",
+                "transition_notes": "The taxi driver acknowledges your destination and begins calculating the fare."
+            },
+            "provide_destination_casual": {
+                "intents": ["accept_fare", "ask_for_meter", "negotiate_fare"],
+                "notes": "Cultural Note: While casual language works, it's still good to be polite to taxi drivers.",
+                "transition_notes": "The taxi driver listens to your destination, thinks for a moment, and then tells you the price."
+            },
+            "negotiate_fare": {
+                "intents": ["accept_fare", "ask_about_travel_time", "ask_for_receipt"],
+                "notes": "Cultural Note: In some countries, negotiating fares is common, but in others, taxis follow fixed pricing.",
+                "transition_notes": "After a brief back-and-forth, the driver agrees on a price and starts the meter."
+            },
+            "accept_fare": {
+                "intents": ["ask_about_travel_time", "ask_for_receipt", "express_gratitude"],
+                "notes": "Stage Note: The driver starts the meter and begins driving toward your hotel.",
+                "transition_notes": "You sit back as the taxi moves through the city, watching the streets pass by."
+            },
+            "ask_about_travel_time": {
+                "intents": ["ask_for_receipt", "express_gratitude"],
+                "notes": "Tip: Asking about the estimated travel time can help you manage expectations.",
+                "transition_notes": "The driver glances at his GPS and gives you an estimated arrival time."
+            },
+            "ask_for_receipt": {
+                "intents": ["express_gratitude"],
+                "notes": "Tip: Always ask for a receipt if you need reimbursement or proof of your ride.",
+                "transition_notes": "The driver nods and starts preparing a receipt as the ride continues."
+            },
+            "express_gratitude": {
+                "intents": ["end"],
+                "notes": "Cultural Note: Saying 'Gracias' and giving a small tip (if customary) leaves a good impression.",
+                "transition_notes": "You thank the driver, take your luggage, and step out of the taxi, ready to check into your hotel."
+            },
+            "end": {
+                "intents": [],
+                "notes": "Congratulations! You successfully completed the taxi-to-hotel scenario."
+            }
+        },
+        
+        "restaurant_dining": {
+            "start": {
+                "intents": ["request_table_formal", "request_table_casual", "mention_reservation"],
+                "notes": "",
+                "transition_notes": "You enter a busy restaurant and see the host standing at a podium near the entrance."
+            },
+            "request_table_formal": {
+                "intents": ["accept_table", "request_different_table", "ask_for_menu"],
+                "notes": "Cultural Note: Using formal language when first entering a restaurant shows respect.",
+                "transition_notes": "The host smiles and checks their reservation book before escorting you to an available table."
+            },
+            "request_table_casual": {
+                "intents": ["accept_table", "request_different_table", "ask_for_menu"],
+                "notes": "Cultural Note: Casual greetings work in most restaurants but might not be ideal in upscale establishments.",
+                "transition_notes": "The host acknowledges your request and leads you to a table in the restaurant."
+            },
+            "mention_reservation": {
+                "intents": ["accept_table", "request_different_table", "ask_for_menu"],
+                "notes": "Tip: Having a reservation often ensures quicker seating and better table options.",
+                "transition_notes": "The host confirms your reservation and promptly leads you to your reserved table."
+            },
+            "accept_table": {
+                "intents": ["ask_for_menu", "order_drinks", "ask_for_recommendations"],
+                "notes": "Stage Note: You sit down at the table and prepare to order.",
+                "transition_notes": "You settle into your seat as the waiter approaches your table."
+            },
+            "request_different_table": {
+                "intents": ["accept_new_table", "ask_for_menu", "order_drinks"],
+                "notes": "Tip: It's acceptable to request a different table if you prefer another location.",
+                "transition_notes": "The host considers your request and shows you alternative seating options."
+            },
+            "accept_new_table": {
+                "intents": ["ask_for_menu", "order_drinks", "ask_for_recommendations"],
+                "notes": "Stage Note: You're now seated at your preferred table.",
+                "transition_notes": "You take a seat at the new table as the waiter comes to greet you."
+            },
+            "ask_for_menu": {
+                "intents": ["order_drinks", "ask_for_recommendations", "order_appetizers"],
+                "notes": "Vocabulary Note: In some countries, you may need to specifically request a menu.",
+                "transition_notes": "The waiter promptly brings you the menu and waits for your initial order."
+            },
+            "order_drinks": {
+                "intents": ["ask_for_recommendations", "order_appetizers", "order_main_course"],
+                "notes": "Cultural Note: Drink orders typically come before food orders in most restaurants.",
+                "transition_notes": "The waiter notes your drink order and asks if you're ready to order food."
+            },
+            "ask_for_recommendations": {
+                "intents": ["order_appetizers", "order_main_course", "ask_about_ingredients"],
+                "notes": "Tip: Asking for recommendations can help you discover local specialties.",
+                "transition_notes": "The waiter enthusiastically describes several popular dishes and today's specials."
+            },
+            "order_appetizers": {
+                "intents": ["order_main_course", "ask_about_ingredients", "compliment_food"],
+                "notes": "Cultural Note: Sharing appetizers is common in many cultures and allows you to try different dishes.",
+                "transition_notes": "The waiter takes your appetizer order and soon returns with the first course."
+            },
+            "ask_about_ingredients": {
+                "intents": ["order_main_course", "mention_dietary_restrictions", "compliment_food"],
+                "notes": "Tip: Asking about ingredients is important for allergies or dietary preferences.",
+                "transition_notes": "The waiter explains the ingredients in detail and suggests alternatives if needed."
+            },
+            "mention_dietary_restrictions": {
+                "intents": ["order_main_course", "compliment_food", "ask_to_modify_dish"],
+                "notes": "Vocabulary Note: Knowing terms for common dietary restrictions is helpful when traveling.",
+                "transition_notes": "The waiter listens carefully to your dietary needs and confirms which menu items are suitable."
+            },
+            "ask_to_modify_dish": {
+                "intents": ["order_main_course", "compliment_food", "request_check"],
+                "notes": "Cultural Note: Modifying dishes is common in some cultures but may be less welcome in others.",
+                "transition_notes": "The waiter discusses your modification request with the kitchen and returns with an answer."
+            },
+            "order_main_course": {
+                "intents": ["compliment_food", "order_dessert", "request_check"],
+                "notes": "Stage Note: The waiter takes your main course order and brings it when ready.",
+                "transition_notes": "Your main course arrives steaming hot and beautifully presented."
+            },
+            "compliment_food": {
+                "intents": ["order_dessert", "request_check", "ask_for_takeaway"],
+                "notes": "Cultural Note: Complimenting the food is appreciated in most cultures.",
+                "transition_notes": "The waiter smiles at your compliment and asks if everything else is to your liking."
+            },
+            "order_dessert": {
+                "intents": ["request_check", "ask_for_takeaway", "leave_tip"],
+                "notes": "Tip: Asking about local dessert specialties is a great way to complete your meal.",
+                "transition_notes": "The waiter describes the dessert options and takes your order."
+            },
+            "ask_for_takeaway": {
+                "intents": ["request_check", "leave_tip", "express_gratitude"],
+                "notes": "Vocabulary Note: 'Takeaway' might be called 'to-go' or 'para llevar' depending on the country.",
+                "transition_notes": "The waiter arranges for your leftover food to be packaged for you to take home."
+            },
+            "request_check": {
+                "intents": ["pay_with_card", "pay_with_cash", "leave_tip"],
+                "notes": "Cultural Note: In some countries, you need to explicitly ask for the check when ready.",
+                "transition_notes": "The waiter brings your check and waits for payment."
+            },
+            "pay_with_card": {
+                "intents": ["leave_tip", "express_gratitude", "end"],
+                "notes": "Tip: It's good to know if credit cards are widely accepted before traveling.",
+                "transition_notes": "The waiter processes your card payment and returns with a receipt."
+            },
+            "pay_with_cash": {
+                "intents": ["leave_tip", "express_gratitude", "end"],
+                "notes": "Cultural Note: In some countries, the waiter may count change in front of you.",
+                "transition_notes": "You hand over cash and the waiter returns with your change."
+            },
+            "leave_tip": {
+                "intents": ["express_gratitude", "end"],
+                "notes": "Cultural Note: Tipping customs vary significantly between countries.",
+                "transition_notes": "You leave an appropriate tip based on local customs."
+            },
+            "express_gratitude": {
+                "intents": ["end"],
+                "notes": "Stage Note: You thank the staff for their service.",
+                "transition_notes": "The waiter and host thank you for your visit as you prepare to leave."
+            },
+            "end": {
+                "intents": [],
+                "notes": "Congratulations! You successfully completed the restaurant dining scenario."
+            }}
+}

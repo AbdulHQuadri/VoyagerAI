@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-address",
+      "2": "I-address",
+      "3": "L-address",
+      "4": "U-address",
+      "5": "B-hotel",
+      "6": "I-hotel",
+      "7": "L-hotel",
+      "8": "U-hotel",
+      "9": "B-price",
+      "10": "I-price",
+      "11": "L-price",
+      "12": "U-price",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-address": 1,
+      "I-address": 2,
+      "L-address": 3,
+      "U-address": 4,
+      "B-hotel": 5,
+      "I-hotel": 6,
+      "L-hotel": 7,
+      "U-hotel": 8,
+      "B-price": 9,
+      "I-price": 10,
+      "L-price": 11,
+      "U-price": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

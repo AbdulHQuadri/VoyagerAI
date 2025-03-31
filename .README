@@ -1,0 +1,70 @@
+# Voyager AI
+
+This is a conversation AI bot, aimed to help users learn languages by simulating real-life scenarios with different bot personalities, such as an airport worker or taxi driver.
+
+The application has been split into two sections:
+
+* **Rasa Logic:** This is responsible for the bot's conversation handling, including intent recognition and response generation.
+* **Voyager-Website:** Web code for handling the user interface, written in React. It involves making API calls to the bot and the database, and handling that data.
+
+
+To get the application running there are a few steps involved: 
+
+## Setup Instructions
+
+1.  **Install Rasa:**
+
+    ```bash
+    pip install rasa
+    ```
+
+2.  **Install Dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Database Setup:**
+
+    * The bot interacts with a MySQL database. Ensure you have MySQL installed and running.
+    * Create a database named `voyager`.
+    * Import the provided SQL schema (if any) to create the necessary tables.
+    * Update the database connection details in `database_config.json`.
+
+4.  **Language Model Setup:**
+
+    * The bot uses a fine-tuned language model (TinyLlama or similar).
+    * The model files are ignored in the repository due to their size.
+    * To retrain the model, run the finetuning.py file found in the data folder of the rasa-logic. This will retrain a tinyllama with the required training data and make the folder in the same directory
+
+5.  **Train Rasa Model:**
+
+    ```bash
+    rasa train
+    ```
+
+6.  **Run Rasa API:**
+
+    ```bash
+    rasa run --enable-api --cors "*" --debug
+    ```
+7. **Run Voyager-Website:**
+
+    Navigate to the Voyager-Website directory in your terminal.
+
+    Run the following command to start both the front-end and back-end development servers:
+
+    ```bash
+    npm run dev
+    ```
+
+    A concurrently module has been installed to enable this to work in one command.
+
+
+## Model Retraining
+
+The large language models used in this project are ignored from version control due to their size. The training scripts for these models are however included. To retrain the models please follow the provided scripts.
+
+## Database Schema
+
+The database schema includes tables for users, lessons, stages, responses, and intents. The schema is designed to store user preferences, lesson content, and conversational data.

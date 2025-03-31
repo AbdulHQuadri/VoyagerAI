@@ -1,0 +1,667 @@
+version: "3.1"
+nlu: 
+  # - intent: greet 
+  #   examples: | 
+  #     - hey 
+  #     - hello 
+  #     - hello there
+  #     - good morning
+  #     - good evening
+  #     - hey there
+  #     - hey dude
+  #     - goodmorning
+  #     - goodevening
+  #     - good afternoon 
+  #     - hi
+  #     - what's up
+  #     - what's good 
+  # - intent: goodbye 
+  #   examples: | 
+  #     - cu
+  #     - good by
+  #     - good night
+  #     - bye
+  #     - goodbye
+  #     - have a nice day
+  #     - see you around
+  #     - bye bye
+  #     - see you later
+  # - intent: affirm
+  #   examples: |
+  #     - yes
+  #     - y 
+  #     - indeed 
+  #     - of course
+  #     - that sounds good
+  #     - correct
+  # - intent: deny
+  #   examples: | 
+  #     - no
+  #     - n 
+  #     - nope
+  #     - nah 
+  #     - don't think so
+  #     - that doesn't sound right
+  #     - incorrect 
+  #     - wrong
+
+  # - intent: mood_great
+  #   examples: |
+  #     - perfect
+  #     - great
+  #     - amazing
+  #     - feeling like a king
+  #     - wonderful
+  #     - I am feeling very good
+  #     - I am great
+  #     - I am amazing
+  #     - super stoked
+  #     - so so perfect
+  #     - so perfect
+  #     - extremely good
+  #     - I'm fine thank you
+  #     - I'm doing great thanks
+
+  # - intent: mood_unhappy
+  #   examples: |
+  #     - my day was horrible
+  #     - my day is ruined
+  #     - I don't feel well
+  #     - super sad
+  #     - I'm so sad
+  #     - very sad 
+  #     - unhappy
+  #     - not good
+  #     - not very good
+  #     - extremely sad
+  #     - so sad
+  #     - so saad
+  #     - I'm not doing so good
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+  
+  # - intent: ask_for_menu
+  #   examples: |
+  #     - what's on offer
+  #     - what's on the menu
+  #     - what are the options
+  #     - any options
+  #     - not sure what to get
+  #     - I'm not sure what to get
+  #     - no clue right now
+      
+  # - intent: order_meal
+  #   examples: |
+  #     - I would like a [pizza](food_item)
+  #     - Can I get a [cheeseburger](food_item)?
+  #     - I'd love a [pasta](food_item)
+  #     - I'll have the [salmon](food_item)
+  #     - A [vegetarian sandwich](food_item), please
+  #     - Could I get the [pizza](food_item)
+  #     - I'm feeling the [fish and chips](food_item)
+      
+  # - intent: customize_order
+  #   examples: |
+  #     - Can I have it without [onions](ingredient)?
+  #     - I'd like extra [cheese](ingredient), please.
+  #     - No [tomato](ingredient) on my sandwich.
+  #     - Can I get that gluten-free?
+  #     - I'd like the sauce on the side.
+
+  # - intent: ask_about_allergies
+  #   examples: |
+  #     - "Does this contain [nuts](allergen)?"
+  #     - "Is there any [dairy](allergen) in this dish?"
+  #     - "I'm allergic to [peanuts](allergen), can you make it without?"
+  #     - "Are your meals nut-free?"
+  #     - "Do you have gluten-free options?"
+
+  # - intent: ask_for_recommendations
+  #   examples: |
+  #     - "What do you recommend?"
+  #     - "What's your best dish?"
+  #     - "What's popular here?"
+  #     - "Do you have a chef's special?"
+  #     - "What's your personal favorite?"
+
+  # - intent: handle_mistakes
+  #   examples: |
+  #     - "I ordered a [burger](food_item), but I got a [sandwich](food_item)."
+  #     - "This isn't what I ordered."
+  #     - "My food is cold."
+  #     - "There's something wrong with my order."
+  #     - "I think my meal is undercooked."
+
+  # - intent: ask_for_bill
+  #   examples: |
+  #     - "Can I get the check, please?"
+  #     - "I'd like to pay now."
+  #     - "Can you bring me the bill?"
+  #     - "How much do I owe?"
+  #     - "Could I get the receipt?"
+
+  # - intent: leave_complaint
+  #   examples: |
+  #     - "The service was really slow."
+  #     - "I'm not happy with my meal."
+  #     - "This food is not what I expected."
+  #     - "I found something in my food."
+  #     - "The waiter was rude."
+
+  # - intent: leave_compliment
+  #   examples: |
+  #     - "The food was amazing!"
+  #     - "That was the best meal I've had in a long time."
+  #     - "Great service!"
+  #     - "The chef did an excellent job!"
+  #     - "I'll definitely come back here again."
+  
+  # - intent: ask_about_specials
+  #   examples: |
+  #     - What are today's specials?
+  #     - Any chef's recommendations?
+  #     - Do you have any special dishes today?
+
+  # - intent: change_mind
+  #   examples: |
+  #     - Actually, can I change my order?
+  #     - I'd like to switch to something else.
+  #     - Can I get a different dish instead?
+
+  # - intent: ask_for_wait_time
+  #   examples: |
+  #     - How long will my food take?
+  #     - When will my meal be ready?
+  #     - What's the wait time for my order?
+
+  # - intent: ask_about_ingredients
+  #   examples: |
+  #     - What's in this dish?
+  #     - Can you tell me the ingredients?
+  #     - What's this made of?
+
+  # - intent: request_water
+  #   examples: |
+  #     - Can I get some water?
+  #     - I'd like a glass of water, please.
+  #     - Can I have some water with my meal?
+
+  - intent: learn_topic
+    examples: |
+      - What are some ways to greet people in Spanish?
+      - How do I say hello in Spanish?
+      - Can you teach me Spanish greetings?
+      - Give me some greetings in Spanish.
+      - What are common ways to greet people in Spain?
+      - I want to learn about Spanish numbers.
+      - How do people in Spain say goodbye?
+      - Can you teach me some useful Spanish phrases?
+      - Give me some words I can use to order food in Spanish.
+  
+  # - intent: translate_word_or_phrase
+  #   examples: |
+  #     - How do I say ["good morning"](phrase) in Spanish?
+  #     - Translate ["thank you"](phrase) to Spanish.
+  #     - What is the Spanish word for ["restaurant"](phrase)?
+  #     - Can you tell me how to say ["Where is the bathroom?"](phrase) in Spanish?
+  #     - What's the translation for ["I need help"](phrase)?
+  #     - How do you say ["Can I get the bill?"](phrase) in Spanish?
+
+  # - intent: thank_you
+  #   examples: |
+  #     - Thank you!
+  #     - Thanks
+  #     - ty
+  #     - tanks
+  #     - tank you
+  #     - Thanks a lot
+  #     - Appreciate it
+    # Scene 1: Finding the Taxi Stand
+  - intent: greet_and_ask_formal
+    examples: |
+      - Good morning! Could you please tell me where the taxi stand is?
+      - Good afternoon! Could you please direct me to the taxi stand?
+      - Hello! Could you kindly tell me where I can find a taxi?
+      - Excuse me, good day! Where might I find the taxi stand, please?
+      - Good evening! I was wondering if you could tell me where the taxi area is?
+      - Pardon me, hello! Could you please point me to where taxis are located?
+      - ¡Buenos días! ¿Podría indicarme dónde está la parada de taxis, por favor?
+      - ¡Buenas tardes! ¿Me podría decir dónde encuentro un taxi, por favor?
+      - ¡Hola! ¿Sería tan amable de indicarme dónde está la zona de taxis?
+      - Disculpe, ¡buen día! ¿Dónde puedo encontrar la parada de taxis, por favor?
+      - ¡Buenas noches! Me preguntaba si podría decirme dónde está el área de taxis
+      - Perdone, ¡hola! ¿Podría indicarme dónde se encuentran los taxis, por favor?
+
+  - intent: greet_and_ask_casual
+    examples: |
+      - Hi, where can I find a taxi?
+      - Hey, where's the taxi stand?
+      - Hello, where do I get a taxi from here?
+      - Hi there, I need a taxi - where should I go?
+      - Hello, can you tell me where taxis are?
+      - Hey, which way to the taxis?
+      - Hola, ¿dónde puedo encontrar un taxi?
+      - Hola, ¿dónde está la parada de taxis?
+      - Hola, ¿de dónde puedo tomar un taxi aquí?
+      - Hola, necesito un taxi - ¿a dónde debo ir?
+      - Hola, ¿puedes decirme dónde están los taxis?
+      - Ey, ¿por dónde se va a los taxis?
+
+  - intent: ask_without_greeting
+    examples: |
+      - Where is the taxi stand?
+      - Where can I get a taxi?
+      - Taxi stand location?
+      - Where do taxis pick up passengers?
+      - How do I find a taxi here?
+      - Which way to taxis?
+      - ¿Dónde está la parada de taxis?
+      - ¿Dónde puedo conseguir un taxi?
+      - ¿Ubicación de la parada de taxis?
+      - ¿Dónde recogen los taxis a los pasajeros?
+      - ¿Cómo encuentro un taxi aquí?
+      - ¿Por dónde se va a los taxis?
+
+  # Scene 2: Speaking with the Taxi Driver
+  - intent: provide_destination_formal
+    examples: |
+      - I would like to go to [Hotel Gran Vía](hotel), please.
+      - Could you take me to [Hotel Metropol](hotel), please?
+      - I'd like to go to [Hotel Plaza](hotel), if you please.
+      - Would you be so kind as to take me to [Hotel Ritz](hotel), please?
+      - To [Hotel Continental](hotel), please, if you don't mind.
+      - Please take me to [Hotel Royale](hotel), thank you.
+      - Me gustaría ir al [Hotel Gran Vía](hotel), por favor.
+      - ¿Podría llevarme al [Hotel Metropol](hotel), por favor?
+      - Quisiera ir al [Hotel Plaza](hotel), si es tan amable.
+      - ¿Sería tan amable de llevarme al [Hotel Ritz](hotel), por favor?
+      - Al [Hotel Continental](hotel), por favor, si no le importa.
+      - Por favor, lléveme al [Hotel Royale](hotel), gracias.
+
+  - intent: provide_destination_with_address
+    examples: |
+      - To [Hotel Gran Vía](hotel), [Calle Alcalá number 25](address).
+      - [Hotel Metropol](hotel), on [Gran Vía 32](address).
+      - I'm going to [Hotel Plaza](hotel) at [Paseo del Prado 15](address).
+      - Take me to [Hotel Ritz](hotel), [Plaza de la Lealtad 5](address).
+      - [Hotel Continental](hotel), it's on [Calle Princesa 18](address).
+      - [Hotel Royale](hotel) at [Calle Mayor 10](address), please.
+      - Al [Hotel Gran Vía](hotel), [calle Alcalá número 25](address).
+      - [Hotel Metropol](hotel), en [Gran Vía 32](address).
+      - Voy al [Hotel Plaza](hotel) en [Paseo del Prado 15](address).
+      - Lléveme al [Hotel Ritz](hotel), [Plaza de la Lealtad 5](address).
+      - [Hotel Continental](hotel), está en [Calle Princesa 18](address).
+      - [Hotel Royale](hotel) en [Calle Mayor 10](address), por favor.
+
+  - intent: provide_destination_casual
+    examples: |
+      - To [Hotel Gran Vía](hotel).
+      - [Hotel Metropol](hotel).
+      - Take me to [Hotel Plaza](hotel).
+      - [Hotel Ritz](hotel), please.
+      - I need to go to [Hotel Continental](hotel).
+      - [Hotel Royale](hotel).
+      - Al [Hotel Gran Vía](hotel).
+      - [Hotel Metropol](hotel).
+      - Lléveme al [Hotel Plaza](hotel).
+      - [Hotel Ritz](hotel), por favor.
+      - Necesito ir al [Hotel Continental](hotel).
+      - [Hotel Royale](hotel).
+
+  # Scene 3: Fare Discussion
+  - intent: accept_fare
+    examples: |
+      - That's fine, thank you.
+      - Sounds good.
+      - That works for me.
+      - OK, no problem.
+      - That's acceptable.
+      - Fair enough.
+      - Está bien, gracias.
+      - Suena bien.
+      - Eso me parece bien.
+      - Vale, sin problema.
+      - Es aceptable.
+      - Me parece justo.
+
+  - intent: ask_for_meter
+    examples: |
+      - Could you use the meter, please?
+      - I'd prefer if you used the taximeter.
+      - Should we use the meter for this trip?
+      - Is the meter running?
+      - Can you turn on the meter, please?
+      - I'd like to see the meter running, please.
+      - ¿Puede usar el taxímetro, por favor?
+      - Preferiría que usara el taxímetro.
+      - ¿Deberíamos usar el taxímetro para este viaje?
+      - ¿Está funcionando el taxímetro?
+      - ¿Puede encender el taxímetro, por favor?
+      - Me gustaría ver el taxímetro funcionando, por favor.
+
+  - intent: negotiate_fare
+    examples: |
+      - Is it possible to go a bit lower?
+      - That seems high. How about [25 euros](price)?
+      - Can we agree on [20 euros](price)?
+      - Would [25 euros](price) be acceptable?
+      - That's more than I expected. Can you do [22 euros](price)?
+      - Is there a fixed rate from the airport that's lower?
+      - ¿Es posible un poco menos?
+      - Parece alto. ¿Qué tal [25 euros](price)?
+      - ¿Podemos acordar [20 euros](price)?
+      - ¿Serían aceptables [25 euros](price)?
+      - Es más de lo que esperaba. ¿Puede hacerlo por [22 euros](price)?
+      - ¿Hay una tarifa fija desde el aeropuerto que sea más baja?
+
+  # Additional Helpful Intents for the Scenario
+  - intent: ask_for_receipt
+    examples: |
+      - Could I have a receipt, please?
+      - I'll need a receipt when we arrive.
+      - Don't forget the receipt, please.
+      - Can you provide a receipt at the end?
+      - I need a receipt for my expenses.
+      - Receipt, please.
+      - ¿Podría darme un recibo, por favor?
+      - Necesitaré un recibo cuando lleguemos.
+      - No olvide el recibo, por favor.
+      - ¿Puede proporcionarme un recibo al final?
+      - Necesito un recibo para mis gastos.
+      - Un recibo, por favor.
+
+  - intent: ask_about_travel_time
+    examples: |
+      - How long will it take to get there?
+      - What's the approximate travel time to the hotel?
+      - How far is the hotel from here?
+      - How much time until we arrive?
+      - Is it a long journey to the hotel?
+      - Are we far from the destination?
+      - ¿Cuánto tiempo tardará en llegar allí?
+      - ¿Cuál es el tiempo aproximado de viaje al hotel?
+      - ¿Qué tan lejos está el hotel de aquí?
+      - ¿Cuánto tiempo hasta que lleguemos?
+      - ¿Es un viaje largo hasta el hotel?
+      - ¿Estamos lejos del destino?
+
+  - intent: express_gratitude
+    examples: |
+      - Thank you very much.
+      - Thanks for your help.
+      - I appreciate your assistance.
+      - That's very helpful, thank you.
+      - Thanks a lot.
+      - Thank you for the information.
+      - Muchas gracias.
+      - Gracias por su ayuda.
+      - Agradezco su asistencia.
+      - Es muy útil, gracias.
+      - Gracias por todo.
+      - Gracias por la información.
+      
+  - intent: out_of_scope
+    examples: |
+      - What is 2+2
+      - Who is the President of the US
+      - How many r's are in strawberry
+      - Can you do my homework for me
+
+
+  # Ordering at restaurant:
+  # Greet, ask for menu, order meal, customize order, ask about allergies, recommendations, handle_mistakes, ask for bill , leave a complaint/compliment  
+
+  - intent: restaurant_greet
+    examples: |
+      - Hello, I'd like a table for two please.
+      - Good evening, do you have any tables available?
+      - Hi there, can I get a table?
+      - I'd like to make a reservation.
+      - Do you have space for four people?
+      - We're here for dinner.
+      - Can we be seated now?
+      - Hello, we have a reservation under Smith.
+      - Hi, is there a wait for a table?
+      - Good afternoon, are you open for lunch?
+
+  - intent: ask_for_menu
+    examples: |
+      - Could I see the menu please?
+      - What dishes do you offer?
+      - Can I have the drinks menu?
+      - Do you have a children's menu?
+      - I'd like to see the dessert options.
+      - What specials do you have today?
+      - May I see the wine list?
+      - Could you show me the menu?
+      - What's on offer today?
+      - Is there a vegan menu available?
+
+  - intent: order_meal
+    examples: |
+      - I'll have the [chicken pasta](dish).
+      - I'd like to order the [steak](dish), [medium rare](preference).
+      - Can I get the [vegetable curry](dish)?
+      - I'll take the [seafood platter](dish).
+      - For my main, I'd like the [risotto](dish).
+      - [Two](quantity) [burgers](dish), please.
+      - I'll order the [daily special](dish).
+      - I want the [grilled salmon](dish).
+      - We'd like to share the [appetizer platter](dish).
+      - Could I get the [house salad](dish)?
+
+  - intent: customize_order
+    examples: |
+      - No [onions](ingredient) in my [salad](dish), please.
+      - Can I substitute [fries](ingredient) for a [salad](side_dish)?
+      - I'd like my [steak](dish) [well-done](preference).
+      - Extra [cheese](ingredient) on my [burger](dish), please.
+      - Can you make it [spicy](preference)?
+      - Is it possible to get this without [cilantro](ingredient)?
+      - Can you put the [dressing](ingredient) on the [side](preference)?
+      - I'd like to add [chicken](ingredient) to my [pasta](dish).
+      - No [mushrooms](ingredient) in my [risotto](dish), please.
+      - Can I get [gluten-free](preference) [pasta](dish) instead?
+
+  - intent: ask_about_allergies
+    examples: |
+      - Does this contain [nuts](allergen)?
+      - I'm allergic to [shellfish](allergen), what can I eat?
+      - Is this dish [dairy-free](dietary_restriction)?
+      - Are there any [gluten-free](dietary_restriction) options?
+      - I have a [peanut](allergen) allergy, is this safe?
+      - Does the sauce contain [soy](allergen)?
+      - Can you tell me the allergens in this [dish](menu_item)?
+      - I'm [lactose intolerant](dietary_restriction), what do you recommend?
+      - Is this meal [egg-free](dietary_restriction)?
+      - I need to avoid [wheat](allergen), what dishes are suitable?
+
+  - intent: ask_recommendations
+    examples: |
+      - What do you recommend?
+      - Which dish is most popular?
+      - What's your signature dish?
+      - What's good here?
+      - Can you suggest something light?
+      - What wine goes well with this?
+      - Which dessert is your favorite?
+      - What's the chef's special today?
+      - Any recommendations for someone who likes spicy food?
+      - What's the best vegetarian option?
+
+  - intent: handle_mistakes
+    examples: |
+      - This isn't what I ordered.
+      - I think there's been a mistake with my order.
+      - I asked for no onions, but there are onions in this.
+      - We haven't received our appetizers yet.
+      - This food is cold.
+      - I ordered the chicken, not the beef.
+      - You brought the wrong drinks.
+      - We've been waiting for our food for an hour.
+      - This is undercooked.
+      - We're missing an item from our order.
+
+  - intent: ask_for_bill
+    examples: |
+      - Could I have the check for [table 5](table_number), please?
+      - We're ready for the bill for [table 12](table_number).
+      - I'd like to pay for [order #423](order_number) now.
+      - Check, please. We're at [table 7](table_number).
+      - How much do we owe for [our meal](service_item)?
+      - Can we split the bill [three ways](payment_method)?
+      - Do you accept [credit cards](payment_method)?
+      - I'll pay for everyone with [cash](payment_method).
+      - Could we have [separate checks](payment_method)?
+      - Is [service](fee_type) included in the price?
+
+  - intent: leave_feedback
+    examples: |
+      - The meal was delicious, compliments to the chef.
+      - The service was too slow today.
+      - I want to speak to the manager about our experience.
+      - Everything was perfect, thank you.
+      - The food was cold when it arrived.
+      - Your staff was very attentive.
+      - I'm disappointed with the quality of the food.
+      - We had a wonderful dining experience.
+      - The music is too loud to have a conversation.
+      - I'll definitely recommend this place to my friends.
+
+  - intent: ask_basic_directions
+    examples: |
+      - How do I get to the [train station](destination)?
+      - Which way is the [museum](destination)?
+      - Can you tell me how to reach the [airport](destination)?
+      - What's the best way to get to the [city center](destination)?
+      - How far is the [beach](destination) from [here](origin)?
+      - Is the [hotel](destination) within walking distance from the [metro](origin)?
+      - Could you direct me to the nearest [pharmacy](destination)?
+      - I'm looking for the [public library](destination).
+      - Where is the [shopping mall](destination)?
+      - How do I find the [tourist information center](destination)?
+
+  - intent: clarify_directions
+    examples: |
+      - Could you repeat that, please?
+      - I didn't understand the last part.
+      - Did you say to turn left or right at the traffic light?
+      - How will I recognize the building?
+      - Should I go north or south on this street?
+      - After the park, where do I go?
+      - Is there a landmark I should look for?
+      - So I take the second exit at the roundabout?
+      - Are there any street signs I should watch for?
+      - Do I need to cross the bridge?
+
+  - intent: ask_public_transit
+    examples: |
+      - Which [bus](transit_type) goes to the [museum](destination)?
+      - How often does the [train](transit_type) run to [downtown](destination)?
+      - Where is the nearest [subway station](transit_point)?
+      - Do I need to change [lines](transit_detail) to get to [Central Park](destination)?
+      - What's the last stop on [route 42](transit_route)?
+      - Does this [tram](transit_type) go to the [city center](destination)?
+      - How many [zones](transit_detail) will I travel through to reach [Brooklyn](destination)?
+      - Is there a [night bus](transit_type) service to [the airport](destination)?
+      - Which [platform](transit_point) does the train to [Boston](destination) leave from?
+      - Do [buses](transit_type) run on [Sundays](time) to [the beach](destination)?
+
+  - intent: ask_walking_distance
+    examples: |
+      - How long does it take to walk there?
+      - Is it far on foot?
+      - Can I walk to the beach from here?
+      - How many blocks away is it?
+      - Is there a shortcut for pedestrians?
+      - Is it a steep walk?
+      - Are there sidewalks all the way?
+      - Is it safe to walk there at night?
+      - Is it better to walk or drive?
+      - How far is it in miles/kilometers?
+
+  - intent: handle_detour
+    examples: |
+      - The road is closed, how else can I get there?
+      - There's construction work, is there another route?
+      - I missed my turn, what should I do now?
+      - The bridge is closed for repairs, what's the alternative?
+      - That street is one-way, how can I get around?
+      - There's a parade blocking the main street today.
+      - The path is flooded, is there another way?
+      - I can't use that subway line, it's out of service.
+      - That area is pedestrianized, how can I drive there?
+      - The highway is jammed, is there a back road?
+
+  - intent: give_directions
+    examples: |
+      - Go straight until you reach the traffic light.
+      - Take the second right after the bank.
+      - The museum is across from the park.
+      - Walk north for about 500 meters.
+      - It's on the corner of Oak Street and 5th Avenue.
+      - Take bus number 42 and get off at the third stop.
+      - You'll see it on your left after the bridge.
+      - Follow the signs to the airport.
+      - It's a 10-minute walk from the train station.
+      - Turn right at the church and continue for two blocks.
+
+  - intent: ask_ticket_prices
+    examples: |
+      - How much is a [bus](transit_type) ticket to [downtown](destination)?
+      - What's the fare to the [airport](destination) by [taxi](transit_type)?
+      - Is there a [day pass](ticket_type) available for [public transport](transit_type)?
+      - Do [children](passenger_type) travel for free on the [subway](transit_type)?
+      - How much does the [ferry](transit_type) cost to [Staten Island](destination)?
+      - Are there discounts for [seniors](passenger_type) on [train](transit_type) tickets?
+      - What's the price of a [return](ticket_type) ticket to [Chicago](destination)?
+      - Is it cheaper to buy a [weekly pass](ticket_type) for the [metro](transit_type)?
+      - How much extra is [first class](ticket_class) on the [express train](transit_type)?
+      - Do I pay on the [bus](transit_type) or need a ticket in advance for [route 7](transit_route)?
+
+  - intent: handle_delay
+    examples: |
+      - When will the next train arrive?
+      - Is the bus running late?
+      - How long is the delay?
+      - Has my flight been postponed?
+      - Will I miss my connection?
+      - Is there an alternative route during the delay?
+      - Why is the subway not running?
+      - Are there any updates on when service will resume?
+      - Can I get a refund for the delay?
+      - Is this the last train tonight?
+
+  - intent: ask_schedules
+    examples: |
+      - What time does the first bus leave?
+      - When is the last train to the city?
+      - How frequently do the ferries run?
+      - What are the operating hours of the subway?
+      - Do you have a timetable for route 7?
+      - Are there any changes to the weekend schedule?
+      - What time does the airport shuttle depart?
+      - When's the next bus to the beach?
+      - How often do trains run during rush hour?
+      - Is there a different schedule on holidays?
+
+    
+
+  # Ask for directions:
+  # Basic directions, clarify directions, public transit info, walking distance, handle a detour, give directions, ask ticket prices, handle delay, ask schedules, 
+
+  # Shopping at a market:
+  # Greet, ask for price, bargain for lower price, different size/colour , quality, handle returns/exchange, compare products
+
+
+  #Introduce yourself and making small talk
+  # Introduce yourself, ask about someone's job, talk about hobbies, discuss the weather, make future plans, talk about recent events, give compliment, discuss the event, awkward situation, suggest activity 
+
+
+
+  

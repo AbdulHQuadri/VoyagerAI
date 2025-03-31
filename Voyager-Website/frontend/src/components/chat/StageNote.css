@@ -1,0 +1,82 @@
+/* StageNote.css */
+.stage-note {
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    max-width: 80%;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+  
+  /* Different styles for each note type */
+  .stage-note.note {
+    background-color: #f0f7ff;
+    border-left: 4px solid #4a90e2;
+  }
+  
+  .stage-note.transition {
+    background-color: #f5f0ff;
+    border-left: 4px solid #9c6ade;
+  }
+  
+  .stage-note.grammar {
+    background-color: #fff5f0;
+    border-left: 4px solid #f5a623;
+  }
+  
+  .stage-note.system {
+    background-color: #f0f0f0;
+    border-left: 4px solid #999;
+  }
+  
+  .stage-note.error {
+    background-color: #fff0f0;
+    border-left: 4px solid #e74c3c;
+  }
+  
+  /* Icon styles */
+  .system-icon,
+  .error-icon,
+  .note-icon,
+  .transition-icon,
+  .grammar-icon {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Grammar note specific styles */
+  .grammar-issues {
+    background-color: #fff8f0;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+  }
+  
+  .grammar-issue {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .grammar-issue:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  /* System message specific styles */
+  .system-message {
+    font-style: italic;
+  }
+  
+  .note-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .note-content p {
+    margin: 6px 0;
+  }

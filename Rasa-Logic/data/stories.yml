@@ -1,0 +1,154 @@
+version: "3.1"
+
+stories:
+
+  # - story: happy path
+  #   steps: 
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: mood_great
+  #     - action: utter_happy
+
+  # - story: sad path 1
+  #   steps: 
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: mood_unhappy
+  #     - action: utter_cheer_up
+  #     - action: utter_did_that_help
+  #     - intent: affirm
+  #     - action: utter_happy
+
+  # - story: sad path 2
+  #   steps: 
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: mood_unhappy
+  #     - action: utter_cheer_up
+  #     - action: utter_did_that_help
+  #     - intent: deny
+  #     - action: utter_goodbye
+  
+  # - story: food test 1
+  #   steps: 
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: ask_for_menu
+  #     - action: utter_meal_options
+  
+  # - story: food test 2 - ask specials then order
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: ask_for_menu
+  #     - action: utter_meal_options
+  #     - intent: ask_about_specials
+  #     - action: utter_specials
+  #     - intent: order_meal
+  #     - action: action_confirm_order
+
+  # - story: food test 3 - customize order
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: menu_ask
+  #     - action: utter_meal_options
+  #     - intent: order_meal
+  #     - action: action_confirm_order
+  #     - intent: customize_order
+  #     - action: action_confirm_customization
+  
+  # - story: food test 4 - allergies check
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: menu_ask
+  #     - action: utter_meal_options
+  #     - intent: ask_about_allergies
+  #     - action: utter_allergy_info
+  #     - intent: order_meal
+  #     - action: action_confirm_order
+
+  # - story: Users asks for greeting notes
+  #   steps:
+  #     - intent: learn_topic
+  #     - action: action_retrieve_notes  
+
+  # - story: Greeting
+  #   steps:
+  #     - intent: greet
+  #     - action: action_response_action
+
+  # - story: Asking for Menu
+  #   steps:
+  #     - intent: ask_for_menu
+  #     - action: action_response_action
+
+  # - story: Ordering Meal
+  #   steps:
+  #     - intent: order_meal
+  #     - action: action_response_action
+
+  # - story: Thank You
+  #   steps:
+  #     - intent: thank_you
+  #     - action: action_response_action
+ 
+
+ # Airport to Hotel Scenario
+
+  - story: Greet the airport worker formally
+    steps:
+      - intent: greet_and_ask_formal
+      - action: action_response_action
+  - story: Greet the airport worker casually
+    steps:
+      - intent: greet_and_ask_casual
+      - action: action_response_action
+  - story: Don't greet the airport worker 
+    steps:
+      - intent: ask_without_greeting
+      - action: action_response_action
+  - story: Provide taxi driver the destination
+    steps:
+      - intent: provide_destination_formal
+      - action: action_response_action
+  - story: 
+    steps:
+      - intent: provide_destination_with_address
+      - action: action_response_action
+  - story: 
+    steps:
+      - intent: provide_destination_casual
+      - action: action_response_action
+  - story: 
+    steps:
+      - intent: accept_fare
+      - action: action_response_action
+  - story: 
+    steps:
+      - intent: ask_for_meter
+      - action: action_response_action
+  - story: 
+    steps:
+      - intent: negotiate_fare
+      - action: action_response_action
+  - story: 
+    steps:
+      - intent: ask_for_receipt
+      - action: action_response_action
+  - story: 
+    steps:
+      - intent: ask_about_travel_time 
+      - action: action_response_action
+  - story: 
+    steps:
+      - intent: express_gratitude
+      - action: action_response_action
+
+
+    
+
+
+
+

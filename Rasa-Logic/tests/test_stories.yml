@@ -1,0 +1,90 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+# stories:
+# - story: Greet and ask weather
+#   steps:
+#   - user: |
+#       Hi
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       What's the weather like?
+#     intent: ask_weather
+#   - action: utter_weather
+
+# - story: Beginner orders food
+#   steps:
+#   - user: |
+#       I want to order a pizza
+#     intent: order_food
+#   - action: utter_ask_size
+#   - user: |
+#       Large
+#     intent: inform_size
+#   - action: action_confirm_order
+
+# - story: Intermediate orders food
+#   steps:
+#   - user: |
+#       I'd like a burger
+#     intent: order_food
+#   - action: utter_ask_toppings
+#   - user: |
+#       Add cheese
+#     intent: inform_toppings
+#   - action: action_confirm_order
+
+# - story: Advanced complaint about order
+#   steps:
+#   - user: |
+#       My order is wrong
+#     intent: complain_about_order
+#   - action: utter_apologize_and_suggest_alternative
+#   - user: |
+#       Yes, that works
+#     intent: accept_alternative
+#   - action: utter_thank_you
+
+# - story: Reject alternative suggestion
+#   steps:
+#   - user: |
+#       My food is cold
+#     intent: complain_about_order
+#   - action: utter_apologize_and_suggest_alternative
+#   - user: |
+#       No, I don't want that
+#     intent: reject_alternative
+#   - action: utter_ask_for_another_suggestion
+
+# - story: Ask for directions by transport
+#   steps:
+#   - user: |
+#       How do I get to the train station?
+#     intent: ask_directions
+#   - action: utter_ask_transport
+#   - user: |
+#       By bus
+#     intent: inform_transport
+#   - action: action_give_directions
+
+# - story: Change user level
+#   steps:
+#   - user: |
+#       Change to advanced mode
+#     intent: change_level
+#   - action: action_change_level
+
+# - story: Introduce self
+#   steps:
+#   - user: |
+#       Hi, I'm John
+#     intent: introduce_self
+#   - action: utter_ask_hobbies
+
+# - story: Thank the bot
+#   steps:
+#   - user: |
+#       Thanks!
+#     intent: thank
+#   - action: utter_thank_you
